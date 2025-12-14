@@ -1,4 +1,3 @@
-
 "use client";
 import * as React from "react";
 import { Pie, PieChart, Label } from "recharts";
@@ -70,6 +69,8 @@ export default function AppPieChart() {
     return (
         <div className="p-4">
             <h1 className="text-center text-lg font-medium mb-5">Total Visitors</h1>
+            
+
             <ChartContainer
                 config={chartConfig}
                 className="mx-auto aspect-square max-h-[250px]"
@@ -86,15 +87,17 @@ export default function AppPieChart() {
                         <Label content={renderCenterLabel} />
                     </Pie>
                 </PieChart>
-                <div className="mt-4 flex flex-col items-center gap-2">
-                    <div className="flex items-center gap-2 font-medium">
-                        Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-                    </div>
-                    <div className="text-muted-foreground text-sm">
-                        Showing total visitors for the last 6 months
-                    </div>
-                </div>
             </ChartContainer>
+            
+
+            <div className="mt-4 flex flex-col items-center gap-2">
+                <div className="flex items-center gap-2 font-medium">
+                    Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+                </div>
+                <div className="text-muted-foreground text-sm">
+                    Showing total visitors for the last 6 months
+                </div>
+            </div>
         </div>
     );
 }

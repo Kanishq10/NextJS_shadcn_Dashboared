@@ -9,6 +9,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
+
 import {
     HoverCard,
     HoverCardContent,
@@ -17,6 +18,10 @@ import {
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { BadgeCheck, Candy, Citrus, Shield } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import EditUser from "@/components/EditUser";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import RadialChart from "@/components/RadialChart";
 
 const SingleUserPage = () => {
     return (
@@ -121,8 +126,13 @@ const SingleUserPage = () => {
                             </HoverCard>
                         </div>
                     </div>
+
                     <div className="bg-primary-foreground p-4 rounded-lg">
-                        <h1 className="text-xl font-semibold">User Information</h1>
+                        <div className="flex justify-between">
+                            <h1 className="text-xl font-semibold">User Information</h1>
+                            <EditUser />
+                        </div>
+
                         <div className="space-y-4 mt-4">
                             <div className="flex flex-col gap-2 mb-8">
                                 <p className="text-sm text-muted-foreground">Profile completion</p>
@@ -133,16 +143,40 @@ const SingleUserPage = () => {
                             <span className="font-bold">Username: </span>
                             <span>Jhon_Depp</span>
                         </div>
+                        <div className="flex items-center gap-2">
+                            <span className="font-bold">Email: </span>
+                            <span>jhonnySins@gmail.com</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="font-bold">Phone: </span>
+                            <span>9876543210</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="font-bold">Role: </span>
+                            <Badge>Admin</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Joined on 2025.01.01</p>
                     </div>
                     <CardList title="Recent Transactions" />
                 </div>
+
                 {/* RIGHT */}
                 <div className="w-full xl:w-2/3 space-y-6">
+                    {/* USER CARD CONTAINER */}
+
                     <div className="bg-primary-foreground p-4 rounded-lg">
-                        User Card Container
+                        <div className="flex items-center gap-3">
+                            <Avatar>
+                                <AvatarImage src="/gorrila.jpg" alt="gorrila" />
+                                <AvatarFallback>Gorilla</AvatarFallback>
+                            </Avatar>
+                            <h1 className="font-bold">Jhone Doe</h1>
+                        </div>
                     </div>
+
+                    {/* Chart Container */}
                     <div className="bg-primary-foreground p-4 rounded-lg">
-                        Chart Container
+                        <RadialChart/>
                     </div>
                 </div>
             </div>

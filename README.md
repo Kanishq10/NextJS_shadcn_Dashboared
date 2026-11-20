@@ -1,33 +1,51 @@
-# NextJS_shadcn_Dashboared
+# NextJS shadcn Dashboared
 
-Source code and project resources for NextJS_shadcn_Dashboared.
+**Portfolio project** · A Next.js dashboard interface using reusable components and a modern app-router structure.
 
 ## Overview
 
-This repository contains the source code and resources for **NextJS_shadcn_Dashboared**.
+A Next.js dashboard interface using reusable components and a modern app-router structure.
 
-## Technologies
+## Technology Stack
 
-- CSS
-- JavaScript
-- TypeScript
+- `Node.js`
+- `Next.js`
+- `React`
+- `Tailwind CSS`
+- `TypeScript`
+- `CSS`
 
-## Getting Started
+## How the Repository Works
 
-```bash
-git clone https://github.com/Kanishq10/NextJS_shadcn_Dashboared.git
-cd NextJS_shadcn_Dashboared
+```mermaid
+flowchart LR
+    N0["Route / Component<br/> Receive UI context"]
+    N1["Data / State<br/> Resolve props or application state"]
+    N0 --> N1
+    N2["Render<br/> Display reusable interface"]
+    N1 --> N2
 ```
 
-Review the project files and configuration to install dependencies and start the application.
+| Stage | Responsibility |
+|---|---|
+| **Route / Component** | Receive UI context |
+| **Data / State** | Resolve props or application state |
+| **Render** | Display reusable interface |
 
-## Repository Contents
+## Concepts Covered
+
+- Component-based UI
+- State and props
+- Event handling
+- Reusable layout
+- Client-side rendering
+
+## Repository Map
 
 - `.gitignore`
-- `README.md`
 - `app`
-- `components.json`
 - `components`
+- `components.json`
 - `eslint.config.mjs`
 - `hooks`
 - `lib`
@@ -36,8 +54,11 @@ Review the project files and configuration to install dependencies and start the
 - `package.json`
 - `postcss.config.mjs`
 - `public`
-- `tsconfig.json`
 
-## Contributing
+## Recruiter Summary
 
-Contributions are welcome. Fork the repository, create a feature branch, and open a pull request.
+This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+
+---
+
+<sub>Documentation is concise and project-focused; source code was not modified.</sub>
